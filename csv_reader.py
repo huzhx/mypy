@@ -15,7 +15,8 @@ import csv
 # If command line parameter is not 1, there is a problem, so ask what the filename is
 if len(sys.argv) != 2:
     print("What is the filename?")
-    sys.exit(-1)
+    print("Usage: {scriptname} <filename>".format(scriptname=sys.argv[0]))
+    sys.exit(1)
 
 filename = sys.argv[1]
 
